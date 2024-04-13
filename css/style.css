@@ -1,0 +1,368 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #00191e;
+    color: #fff;
+    font-size: 18px;
+    background-image: url('../img/fon.png');
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 20px;
+}
+nav {
+    justify-content: center;
+}
+header,
+nav,
+section,
+article,
+footer {
+    display: block;
+}
+
+header {
+    display: flex;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: center;
+}
+.header-container {
+    display: flex;
+    min-width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+    color: #fff;
+}
+nav {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    box-shadow: #000 2px 0 10px ;
+    box-shadow: #000 -1px 0 10px ;
+    min-height: 100vh;
+    background: #001f26;
+    padding: 10px;
+    align-items: center;
+}
+
+.box img {
+    border-radius: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+}
+
+/* V */
+.main-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.title {
+    font-size: 28px;
+    margin: 15px 0 30px;
+}
+.main-one img {
+    max-width: 40%;
+}
+.photo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.text {
+    max-width: 83%;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.main-two {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.main-two__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.two-text {
+    margin-bottom: 25px;
+}
+.main-two img {
+    max-width: 35%;
+    flex-direction: column;
+    width: auto;
+}
+
+.main-three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.main-three img {
+    max-width: 35%;
+    margin-right: 20px;
+}
+.main-three__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.main-four {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-four img {
+    max-width: 35%;
+}
+.main-four__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.main-five {
+    display: flex;
+    justify-content: center;
+}
+.main-five h3 {
+    margin: 20px;
+}
+/* z */
+.container {
+    margin: 20px 0;
+}
+.card {
+    display: flex;
+    justify-content: space-around;
+    border: 3px solid #1c2f44;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 10px;
+    max-width: 1200px;
+}
+
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.5;
+}
+
+.card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-photo {
+    max-width: 80%;
+    max-height: 90%;
+    flex-direction: column; 
+    flex: 1;
+}
+.card-con {
+    max-width: 700px;
+    padding: 5px 0;
+}
+.card-con a {
+    color:  #3e6c9f;
+}
+.main-text {
+    padding: 5px;
+}
+.main-text__name {
+    font-size: 28px;
+    color: #3e6c9f;
+}
+.main-text__estimation {
+    font-size: 22px;
+    color: #5796df;
+
+}
+
+.card-button {
+    background: 0%;
+    color: #a79bd3;
+    border-color: #0e2d48;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.bg-form {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4000px;
+    height: 2000px;
+    background: #00000090;
+    transition: display 0.5s;
+}
+
+
+.form {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-height: 500px;
+    background: #0e2d48;
+    background-image: url('../img/фон форм.png');
+    border-radius: 15px;
+    border: #1b507e solid 1px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px 20px;
+}
+
+.form-textarea {
+    resize: horizontal;
+    width: 94%;
+    resize: none;
+    height: 150px;
+    border: none;
+    border-radius: 15px;
+    border: #000 solid 1px;
+    padding: 7px;
+    margin-top: 5px;
+}
+
+.form-email {
+    width: 94%;
+    margin: 5px;
+    padding-top: 5px;
+    border: none;
+    border-radius: 15px;
+    border: #000 solid 1px;
+    padding: 7px;
+}
+.form-email:first-child {
+    margin-bottom: 0;
+}
+.form p {
+    margin-bottom: 15px;
+}
+.close {
+    font-size: 30px;
+    transform: rotate(45deg);
+    margin-top: 20px;
+    margin-bottom: -30px;
+    margin-left: 88%;
+    max-width: 30px;
+    cursor: pointer;
+}
+
+.form1 {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    max-width: 30px;
+    
+}
+.form1:hover {
+    font-size: 16px;
+}
+
+.form-button {
+    width: 250px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 41%;
+    border: none;
+    border-radius: 15px;
+    border: #000 solid 1px;
+    background: #355981;
+    color: #fff;
+}
+.form-button:hover{
+    background: #4e81bb;
+    border-color: #fff;
+}
+.form-button:active {
+    box-shadow: #000 inset 1px 1px 5px ;
+    font-weight: bold;
+}
+
+@media(max-width: 1000px ){
+    .card {
+        display: block;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .photo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-one img {
+        max-width: 80%;
+    }
+    .main-two, 
+    .main-three,
+    .main-four {
+        flex-direction: column;
+    }
+    .main-two__info,
+    .main-three__info,
+    .main-four__info {
+        width: 80%;
+    }
+    .main-two img,
+    .main-three img,
+    .main-four img {
+        max-width: 70%;
+    }
+
+}
